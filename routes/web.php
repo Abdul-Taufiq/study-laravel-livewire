@@ -34,7 +34,7 @@ Route::get('send-wa', function () {
         'Authorization' => 'KfhqxfXHmDEcKPKsbeTq',
 
     ])->post('https://api.fonnte.com/send', [
-        'target' => '082135341258',
+        'target' => 'nomor WA',
         'message' => 'Hallo'
     ]);
 
@@ -44,9 +44,9 @@ Route::get('send-wa', function () {
 
 Route::get('send-wa-wablas', function () {
     $response = Http::withHeaders([
-        'Authorization' => '9CMpU0JHSp95mLn3POpSTfX4Bj9bxd55ISnM8ifEpyKDZTlGA70KqYm9k0LLwzYw', // Token API
+        'Authorization' => 'xxx', // Token API
     ])->post('https://wablas.com/api/send-message', [
-        'phone' => '082135341258', // Nomor tujuan
+        'phone' => 'nomor WA', // Nomor tujuan
         'message' => 'Hallo', // Pesan yang akan dikirim
     ]);
 
