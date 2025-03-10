@@ -29,6 +29,7 @@ Route::get('belajar-crud-show/{id}', [KelasController::class, 'showKelas'])->nam
 Route::get('belajar-crud-show/{id}/edit', [KelasController::class, 'edit'])->name('kelas.edit');
 
 
+// use fonte
 Route::get('send-wa', function () {
     $response = Http::withHeaders([
         'Authorization' => 'KfhqxfXHmDEcKPKsbeTq',
